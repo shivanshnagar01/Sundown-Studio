@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- <div class="main"> -->
+    <div class="main">
         <!-- <div class="commit"></div> -->
 
         <div class="top z1">
@@ -48,7 +48,7 @@
         </div>
         <hr>
         <div class="video-sec z1">
-            <div class="glow"></div>
+            <div class="glow g1"></div>
             <video autoplay loop muted src="video.mp4" class="video"></video>
         </div>
         <div class="slider-cont z1">
@@ -211,8 +211,8 @@
         </div>
 
     </div>
-    <!-- <div class="transparent"></div> -->
-    <!-- </div> -->
+    <div class="transparent"></div>
+    </div>
 
     <div class="foot-cont">
         <footer class="footer">
@@ -243,6 +243,11 @@
         </footer>
     </div>
 
+ </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script>
 
@@ -270,6 +275,21 @@
             slidesPerView: 4,
             spaceBetween: 20,
         });
+
+           gsap.registerPlugin(ScrollTrigger);
+
+            gsap.to(".foot-cont", {
+      scrollTrigger: {
+        trigger: ".work",      
+        start: "top 80%",    
+        end: "top 30%",      
+        scrub: true,             
+      },
+      y: "-4%",
+      rotation: 360,
+      borderRadius: "50%",
+      backgroundColor: "#00ffcc"
+    });
     </script>
 
 
