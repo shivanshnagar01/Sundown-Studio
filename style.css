@@ -464,7 +464,7 @@ hr {
     margin-top: 6%;
     height: 300px;
     cursor: grab;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .swiper-wrapper {
@@ -482,6 +482,12 @@ hr {
     border-left: 1px solid #a39e9783;
     display: flex;
     /* width: max-content; */
+}
+
+.gapb{
+    height: 20vh;
+    width: 100%;
+    background-color: #efeae3;
 }
 
 .s1 {
